@@ -1,0 +1,109 @@
+<!DOCTYPE html><!--declaration for using HTML version 5-->
+<html><!--starting of html-->
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="contact form, initial-scale=1">
+	<title>Contact</title>
+	<!--linking external css-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!--Internal css start-->
+<style>
+	body{
+	background: skyblue;
+	font-size: 14px;
+}
+</style>
+<!--Internal css end-->
+<script src="validation.js"></script>
+<body>
+	<!--navigation bar is made along with the use of table along with linking another pages for navigatable website-->
+		<div class="container">
+			<div class="navigation">
+				<div class="logo">
+					<a href="#"><img src="images/logo.jpg" alt="This is logo" width="80px" height="50px"></a>
+				</div>
+			<div class="nav-table-holder">
+				<table>
+					<tr>
+						<td>
+							<a href="home.html">Home</a>
+						</td>
+						<td>
+							<a href="product.html">Product</a>
+						</td>
+						<td>
+							<a href="blog.html">Blog</a>
+						</td>
+						<td>
+							<a href="research.html">Research</a>
+						</td>
+						<td>
+							<a href="contact.html">Contact Us</a>
+						</td>
+						<td>
+							<a href="#">
+								<img src="images/cart.jpg" alt="This is an image" width="30px" height="30px">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="container3">
+			<p id="date"></p>
+			<h1 style="font-family: sans-serif;">Connect with Us</h1>
+			<p><i>Have any feedback? We'd love to hear from you.</i></p>
+			<div class="contactBox">
+				<div class="contactLeft">
+					<h3>Send your request</h3>
+					<div id="error_message"></div>
+					<!--use of form tag for making form-->
+					<form id="myform" onsubmit="return validation()">
+						<!--making of form and input taking field and a radio button -->
+						<div class="inputRow">
+							<div class="inputGroup">
+								<label>FirstName</label>
+								<input type="text" placeholder="your firstname" id="FirstName">
+							</div>
+							<div class="inputGroup">
+								<label>LastName</label>
+								<input type="text" placeholder="your lastname" id="LastName">
+							</div>
+						</div>
+						<div class="inputRow">
+							<div class="inputGroup">
+								<label>Phone</label>
+								<input type="text" placeholder="your phonenumber" id="phone">
+							</div>
+							<div class="inputGroup">
+								<label>Email</label>
+								<input type="email" placeholder="your email" id="email">
+							</div>
+						</div>
+						<label>Message</label>
+						<textarea rows="5" placeholder="your Message" id="message"></textarea>
+						<button type="submit">Submit</button>
+				</div>
+				<div class="contactRight">
+					<h3>Reach Us</h3>	
+					<table>
+						<tr>
+							<td>Email</td>
+							<td>happyshopping45@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Phone</td>
+							<td>+977 9818533429</td>
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td>102, Miltery Marg<br>Baneshwor<br>Kathmandu 44601<br>Nepal</td>
+						</tr>
+					</table>				
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
